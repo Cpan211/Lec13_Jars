@@ -13,7 +13,7 @@ public class Student extends Person {
 
     private String studentId;
 
-    // Constructors, getters, and setters
+    // Constructor
     public Student(String name, int age, String studentId) {
         super(name, age);
         this.studentId = studentId;
@@ -26,5 +26,11 @@ public class Student extends Person {
 
     public void setStudentId(String studentId) {
         this.studentId = studentId;
+    }
+    
+        @Override
+    public String toString() {
+        return this +
+                ", studentId='" + studentId + '\'';
     }
 }

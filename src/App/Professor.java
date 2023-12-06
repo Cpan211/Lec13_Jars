@@ -27,4 +27,10 @@ public class Professor extends Person {
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
     }
+    
+            @Override
+    public String toString() {
+        return this +
+                ", professor ='" + employeeId + '\'';
+    }
 }
