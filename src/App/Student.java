@@ -30,7 +30,7 @@ public class Student extends Person {
     
         @Override
     public String toString() {
-        return this +
+        return super.toString() +
                 ", studentId='" + studentId + '\'';
     }
 }

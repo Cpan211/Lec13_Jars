@@ -30,7 +30,7 @@ public class Professor extends Person {
     
             @Override
     public String toString() {
-        return this +
+        return super.toString() +
                 ", professor ='" + employeeId + '\'';
     }
 }
